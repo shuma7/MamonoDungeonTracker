@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">マモトラ</string>
+    <string name="stats_title">戦績</string>
+    <string name="start_tracking">トラッキング開始</string>
+    <string name="stop_tracking">トラッキング停止</string>
+    <string name="tracking_active">トラッキング中</string>
+    <string name="tracking_inactive">停止中</string>
+</resources>

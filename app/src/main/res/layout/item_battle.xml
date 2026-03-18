@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <!-- WIN / LOSE バッジ -->
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:text="WIN"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="4dp" />
+
+        <!-- 対戦情報 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:id="@+id/tvOpponent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="相手名 (1000)"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvMyRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自分: 1000"
+                android:textSize="12sp"
+                android:textColor="#888888" />
+
+        </LinearLayout>
+
+        <!-- トロフィー変動 -->
+        <TextView
+            android:id="@+id/tvTrophyChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏆 +5"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp" />
+
+        <!-- 日時 -->
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03/16 10:30"
+            android:textSize="11sp"
+            android:textColor="#AAAAAA" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

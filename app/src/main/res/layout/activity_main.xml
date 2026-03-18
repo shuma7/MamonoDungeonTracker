@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="マモトラ"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="まものダンジョン+ 戦績トラッカー"
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:layout_marginBottom="32dp" />
+
+    <!-- 権限ステータス -->
+    <TextView
+        android:id="@+id/tvOverlayStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="オーバーレイ権限: 確認中"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:background="#F5F5F5"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnGrantOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="オーバーレイ権限を設定する"
+        android:layout_marginBottom="24dp" />
+
+    <!-- トラッキング状態 -->
+    <TextView
+        android:id="@+id/tvTrackingStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止中"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnStartStop"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="トラッキング開始"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 戦績プレビュー -->
+    <TextView
+        android:id="@+id/tvStatsPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="総対戦: 0戦 / 勝率: 0%"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnViewStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="詳細な戦績を見る"
+        style="@style/Widget.Material3.Button.OutlinedButton" />
+
+</LinearLayout>
